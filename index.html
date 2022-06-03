@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form>
+        <label for="nome">Nome</label>
+        <input type="text" required id="nome" name="nome" placeholder="Digite seu nome..."><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Digite seu email..."><br>
+
+        <label for="motivo">O que te motivou a participar do evento?</label><br>
+        <textarea name="motivo" id="motivo" cols="40" rows="5" placeholder="Me interessei a participar do evento porque..."></textarea><br>
+
+        <label for="modulo">Qual módulo no curso da Kenzie está cursando?</label>
+        <select name="modulo" id="modulo">
+            <option value="">Selecione</option>
+            <option value="1">Módulo 1</option>
+            <option value="2">Módulo 2</option>
+            <option value="3">Módulo 3</option>
+            <option value="4">Módulo 4</option>
+            <option value="5">Módulo 5</option>
+            <option value="Formado">Formado</option>
+        </select><br>
+
+        <label for="senha">Crie uma senha</label><br>
+        <input type="password" id="senha" name="senha" required minlength="6" placeholder="Mínimo 6 caracteres"><br>
+
+        <label for="confirmarsenha">Confirme sua senha</label><br>
+        <input type="password" id="confirmarsenha" name="confirmarsenha" required minlength="6" placeholder="Digite novamente">
+
+        <p>Você deseja receber novidades no seu email?</p>
+        <label for="queronovidade">Sim</label>
+        <input type="radio" id="queronovidade" name="receberemail" value="sim" required>
+
+        <label for="naoqueronovidade">Não</label>
+        <input type="radio" id="naoqueronovidade" name="receberemail" value="nao" required>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+    
+</body>
+</html>
